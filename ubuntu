@@ -1,0 +1,1 @@
+docker run --rm -it -v $(pwd):/home/qemu qemu && echo Bye!

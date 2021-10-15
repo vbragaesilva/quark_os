@@ -1,0 +1,1 @@
+nasm -f bin source/main.asm -o boot.bin

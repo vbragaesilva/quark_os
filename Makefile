@@ -13,3 +13,8 @@ build-x86_64: $(x86_64_asm_object_files)
 	cp dist/x86_64/kernel.bin targets/x86_64/iso/boot/kernel.bin && \
 	grub-mkrescue /usr/lib/grub/i386-pc -o dist/x86_64/kernel.iso targets/x86_64/iso
 
+.PHONY: load-bins
+
+load-bins: 
+	sudo cp ubuntu /bin/ubuntu
+
