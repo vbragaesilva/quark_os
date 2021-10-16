@@ -13,8 +13,13 @@ This command will build the container with the essential tools we need:
 /workspace$ docker build compiler-ubuntu -t ubuntu 
 ```  
 `compiler-ubuntu` : Location of the Dockfile \
-`-t ubuntu` : custom image name 
-
+`-t ubuntu` : custom image name \ 
+\
+\
+We can make this step simpler using the Makefile:
+```
+/workspace$ make build_ubuntu
+```
 <br><br>
 
 ### Runnung the container
@@ -29,7 +34,7 @@ Name of our image `ubuntu`. \
 The container will automatically stop ater exiting `--rm` \
 Use `exit` to exit the container.
 
-We can make this step simpler using the Makefile:
+Or use its shorter version:
 ```
 /workspace$ make ubuntu
 ```
@@ -62,3 +67,4 @@ Or use the cleaner version:
 Qemu will look for `boot.bin` in the folder `src/boot`.
 
 Now, our Operating System is ready!
+
