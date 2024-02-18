@@ -1,4 +1,4 @@
-# Quark
+# Quark OS
 
 ## Quick Start
 
